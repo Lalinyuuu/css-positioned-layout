@@ -1,5 +1,55 @@
 body {
   font-family: "Kanit";
+  background: #000;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Start coding here */
+/* Container for positioning */
+.container {
+  position: relative;
+  width: 700px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #fff;
+  border-radius: 0;
+}
+
+/* Main image */
+.main-img {
+  width: 150%;
+  /* border-radius: 10px; */
+  display: block;
+  
+}
+
+/* Gray bubble (top right) */
+.bubble.gray {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #888888cc;
+  color: #fff;
+  padding: 16px 40px 16px 24px;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0 16px 24px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0) 100%);
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+}
