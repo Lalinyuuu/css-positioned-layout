@@ -1,1 +1,139 @@
-/* Start coding here */
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Sarabun', Arial, sans-serif;
+  background: #fff;
+}
+
+.header {
+  background: #848484;
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 16px 0 16px 12px;
+  font-family: serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.chatroom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 0px;
+  position: relative;
+}
+
+.chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 30px;
+  margin-top: 60px;
+  margin-left: auto;
+  position: relative;
+}
+
+.chat-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  margin-left: 0;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.chat-bubble.left {
+  background: #848484;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.chat-bubble.left:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.chat-bubble.right {
+  background: #00c40a;
+  color: black;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  width: 220px;
+  max-width: 220px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  word-break: break-word;
+}
+
+.chat-bubble.right.gray {
+  background: #e5e5e5;
+  color: #222;
+  border-radius: 25px 25px 25px 25px;
+  position: relative;
+  width: 220px;
+  max-width: 220px;
+}
+
+.close-btn {
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: gray;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+
+.emoji-bubble {
+  background: #00c40a;
+  color: #fff;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+  width: 220px;
+  max-width: 220px;
+  justify-content: flex-start;
+}
+
+.emoji-bubble span {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .chatroom-container {
+    align-items: stretch;
+  }
+  .chat-right {
+    margin-top: 120px;
+  }
+  .chat-left {
+    margin-top: 60px;
+  }
+}
